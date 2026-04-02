@@ -1,0 +1,63 @@
+/* Щоб на тач-пристроях не спрацьовував hover */
+@media (any-hover: hover) {
+	.sidebar__link:hover {
+		color: var(--color-link-hover);
+	}
+
+	.footer__link:hover {
+		color: var(--color-link-hover);
+	}
+}
+
+@media (max-width: 900px) {
+	.fullwrap {
+		padding: 0 14px;
+	}
+
+	.wrap {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		flex-basis: auto;
+	}
+}
+
+@media (max-width: 640px) {
+
+	.header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.header__title {
+		font-size: 26px;
+	}
+
+	.header__subtitle {
+		font-size: 15px;
+	}
+
+	.main,
+	.sidebar,
+	.footer {
+		padding: 14px;
+	}
+
+	.main__title,
+	.sidebar__title {
+		font-size: 22px;
+	}
+
+	.main__image,
+	.main__image--left,
+	.main__image--right {
+		float: none;
+		margin: 0 auto 10px;
+	}
+
+	.sidebar__link {
+		font-size: 18px;
+	}
+}
+
