@@ -1,0 +1,19 @@
+.top {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px 22px;
+    margin-bottom: 22px;
+    animation: header-in 800ms ease-out;
+}
+
+.top h1 {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.top p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+

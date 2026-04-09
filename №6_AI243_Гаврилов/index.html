@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №6 - Гаврилов О.В.</title>
+    <link rel="stylesheet" href="style/imports.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="top">
+        <h1>Лабораторна робота №6: CSS-анімації та 3D-трансформації</h1>
+        <p>Студент: <strong>Гаврилов О.В.</strong></p>
+        <nav aria-label="Головне меню">
+            <ul class="menu">
+                <li><a href="#anim" style="--i: 1;">Анімації</a></li>
+                <li><a href="#transform2d" style="--i: 2;">2D-трансформації</a></li>
+                <li><a href="#transform3d" style="--i: 3;">3D-трансформації</a></li>
+                <li><a href="#practice" style="--i: 4;">Практика</a></li>
+                <li><a href="#results" style="--i: 5;">Результати</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <article class="card" id="anim" style="--d: 1;">
+            <h2>CSS-анімації</h2>
+            <p>Анімації створюються через <code>@keyframes</code> та властивості <code>animation-name</code>,
+                <code>animation-duration</code>, <code>animation-timing-function</code> і <code>animation-iteration-count</code>.
+                На цій сторінці меню використовує циклічну пульсацію, а картки - ефект плавної появи.</p>
+            <span class="tag">Ефект: keyframes + easing</span>
+        </article>
+
+        <article class="card" id="transform2d" style="--d: 2;">
+            <h2>2D-трансформації</h2>
+            <p>Для інтерактивності застосовано <code>translate</code>, <code>rotate</code> і <code>scale</code>.
+                При наведенні пункти меню піднімаються, трохи повертаються і збільшуються, що підкреслює активність елементів.</p>
+            <span class="tag">Ефект: translate + rotate + scale</span>
+        </article>
+
+        <article class="card" id="transform3d" style="--d: 3;">
+            <h2>3D-трансформації</h2>
+            <p>Для інформаційних блоків використано перспективу контейнера та обертання по осях <code>X</code>/<code>Y</code>.
+                На ховер картка нахиляється в просторі, формуючи об'ємний ефект без JavaScript.</p>
+            <span class="tag">Ефект: perspective + rotateX/rotateY</span>
+        </article>
+
+        <article class="card" id="practice" style="--d: 4;">
+            <h2>Практична частина</h2>
+            <p>Центральна зона побудована у дві колонки через CSS Grid. Кожен блок має власну затримку появи,
+                що створює каскадну анімацію. Фоновий діагональний відблиск рухається окремо для візуальної динаміки.</p>
+            <span class="tag">Ефект: grid + stagger + decorative motion</span>
+        </article>
+
+        <article class="card" id="results" style="--d: 5;">
+            <h2>Висновок</h2>
+            <p>У роботі реалізовано вимоги: меню в шапці, кілька інформаційних блоків у дві колонки,
+                різні CSS-анімації та комбінації 2D/3D-трансформацій. Верстка адаптивна й охайна для демонстрації в лабораторній.</p>
+            <span class="tag">Готово до перевірки</span>
+        </article>
+
+        <article class="card" style="--d: 6;">
+            <h2>Додатково: доступність</h2>
+            <p>Підтримано режим <code>prefers-reduced-motion</code>, у якому анімації вимикаються.
+                Це зменшує навантаження та робить сторінку комфортнішою для користувачів із чутливістю до руху.</p>
+            <span class="tag">Ефект: reduced-motion support</span>
+        </article>
+    </main>
+
+    <footer>
+        Виконав: Гаврилов О.В. | Група AI-243 | Лабораторна робота №6
+    </footer>
+</div>
+</body>
+</html>

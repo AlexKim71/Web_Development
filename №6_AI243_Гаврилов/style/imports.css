@@ -1,0 +1,12 @@
+@import url("./variables.css");
+@import url("./main.css");
+@import url("./components/wrapper.css");
+@import url("./components/top.css");
+@import url("./components/menu.css");
+@import url("./components/card.css");
+@import url("./components/footer.css");
+@import url("./animations.css");
+@import url("./responsive.css");
+@import url("./normalize.css");
+@import url("./accessibility.css");
+
