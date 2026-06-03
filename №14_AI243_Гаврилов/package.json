@@ -1,0 +1,22 @@
+{
+  "name": "lab14-tailwind",
+  "version": "1.0.0",
+  "description": "Лабораторна робота №14: Адаптивна сторінка з Tailwind CSS",
+  "author": "Гаврилов О.В. (Варіант 8)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "responsive",
+    "adaptive"
+  ]
+}
