@@ -1,0 +1,13 @@
+@media (hover: none) and (pointer: coarse) {
+    a,
+    button,
+    input,
+    label,
+    select,
+    summary,
+    textarea,
+    [role="button"] {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+

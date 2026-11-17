@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна №4 - JavaScript DOM (Варіант 8)</title>
+  <link rel="stylesheet" href="style/variables.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Лабораторна робота №4: Модель DOM</h1>
+    <p class="subtitle">Варіант 8 - Спорт</p>
+
+    <section class="card">
+      <h2>1) Зміна зображення по кліку</h2>
+      <img
+        id="sportImage"
+        class="sport-image"
+        src="assets/1.webp"
+        alt="Футбольний м'яч"
+      >
+      <p id="imageCaption" class="caption">Натисніть на зображення, щоб змінити спорт.</p>
+    </section>
+
+    <section class="card controls-grid">
+      <h2>2-3) Кнопки та зміна тексту</h2>
+
+      <button id="toggleGameBtn" class="btn primary" type="button">Почати гру</button>
+
+      <button id="changeContentBtn" class="btn" type="button">Оновити текстові блоки</button>
+
+      <button id="changeBgBtn" class="btn" type="button">Змінити фон сторінки</button>
+
+      <button id="openModalBtn" class="btn success" type="button">Відкрити модальне вікно</button>
+
+      <button id="themeToggleBtn" class="btn" type="button">Увімкнути темну тему</button>
+
+      <div class="counter-box">Лічильник натискань кнопки зміни тексту: <span id="changeCounter">0</span></div>
+
+      <p id="sportText">Вид спорту: Футбол.</p>
+      <div id="scoreText" class="score-block">Рахунок: 1:0</div>
+
+      <div id="greetingResult" class="greeting"></div>
+    </section>
+  </main>
+
+  <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <h3 id="modalTitle">Введіть ім'я</h3>
+      <label for="userNameInput">Ім'я користувача:</label>
+      <input id="userNameInput" type="text" placeholder="Ваше ім'я" maxlength="30">
+      <p id="modalError" class="error-text" aria-live="polite"></p>
+      <div class="modal-actions">
+        <button id="saveNameBtn" class="btn success" type="button">Підтвердити</button>
+        <button id="closeModalBtn" class="btn danger" type="button">Закрити</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
+

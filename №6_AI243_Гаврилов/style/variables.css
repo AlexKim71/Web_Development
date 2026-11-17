@@ -1,0 +1,11 @@
+:root {
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --primary: #2155cd;
+    --accent: #23a6d5;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --shadow: 0 12px 30px rgba(33, 85, 205, 0.12);
+    --radius: 16px;
+}
+

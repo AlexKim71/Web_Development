@@ -1,0 +1,87 @@
+/* Завдання 1. CSS селектори */
+
+/* 1. Таблицю з id="age-table" */
+#age-table {
+    background-color: darkorange;
+}
+
+/* 2. Всі елементи label всередині цієї таблиці */
+#age-table label {
+    background-color: lawngreen;
+}
+
+/* 3. Перший елемент td цієї таблиці */
+#age-table td:first-child {
+    background-color: blueviolet;
+}
+
+/* 4. Форму з ім'ям name="search-person" */
+form[name="search-person"] {
+    border: 3px solid blue;
+}
+
+/* 5. Перший input цієї форми, серед тих, що мають type="text" */
+form[name="search-person"] input[type="text"]:first-of-type {
+    background-color: beige;
+}
+
+/* 6. Останній input цієї форми, серед тих, що мають type="text" */
+form[name="search-person"] input[type="text"]:last-of-type {
+    background-color: darkseagreen;
+}
+
+/* 7. Параграф, який знаходиться відразу після цієї форми */
+form[name="search-person"] + p:hover {
+    background-color: orange;
+}
+
+/* 8. Всі непарні пункти списку з id="messages" */
+#messages li:nth-child(odd) {
+    background-color: greenyellow;
+}
+
+/* 9. Всі парні пункти списку з id="messages" */
+#messages li:nth-child(even) {
+    background-color: coral;
+}
+
+/* 10. Всі посилання (тег <a>), які розташовані після заголовку h3#widget-title на тому ж рівні вкладення */
+#widget-title ~ a {
+    color: green;
+}
+
+/* 11. Посилання (тег <a>) всередині останнього пункту списку #messages */
+#messages li:last-child a {
+    color: red;
+}
+
+/* 12. Елемент, який містить атрибут name='info[1]' */
+input[name='info[1]'] {
+    border: 5px solid green;
+}
+
+/* Завдання 2. Медіа-запити */
+
+@media (max-width: 299px) {
+    body > div {
+        background-color: greenyellow;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 799px) {
+    body > div {
+        background-color: darkorange;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 800px) {
+    body > div {
+        background-color: blueviolet;
+        height: 200px;
+        margin-bottom: 100px;
+    }
+}

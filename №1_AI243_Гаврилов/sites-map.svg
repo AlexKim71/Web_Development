@@ -1,0 +1,21 @@
+<svg width="900" height="420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="420" fill="#e0f2fe" />
+  <text x="450" y="38" text-anchor="middle" font-size="24" font-family="Arial" fill="#0f172a">
+    Карта популярних сайтів
+  </text>
+
+  <circle cx="170" cy="130" r="46" fill="#f59e0b" />
+  <text x="170" y="136" text-anchor="middle" font-size="18" font-family="Arial" fill="white">Google</text>
+
+  <circle cx="390" cy="110" r="46" fill="#2563eb" />
+  <text x="390" y="116" text-anchor="middle" font-size="16" font-family="Arial" fill="white">YouTube</text>
+
+  <circle cx="610" cy="130" r="46" fill="#7c3aed" />
+  <text x="610" y="136" text-anchor="middle" font-size="16" font-family="Arial" fill="white">Wikipedia</text>
+
+  <circle cx="280" cy="285" r="46" fill="#0ea5e9" />
+  <text x="280" y="291" text-anchor="middle" font-size="18" font-family="Arial" fill="white">GitHub</text>
+
+  <circle cx="510" cy="285" r="46" fill="#16a34a" />
+  <text x="510" y="291" text-anchor="middle" font-size="16" font-family="Arial" fill="white">Stack</text>
+</svg>
