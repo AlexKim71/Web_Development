@@ -1,0 +1,54 @@
+/* Скидання стандартного outline, щоб далі керувати фокусом через :focus-visible */
+.sidebar__link:focus {
+	outline: none;
+}
+
+/* Прибираємо підсвітку тапу на сенсорних пристроях */
+.sidebar__link,
+.header__logo,
+.footer__link {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Навігація з клавіатури для доступності */
+.sidebar__link:focus-visible {
+	color: var(--color-link-hover);
+	outline: 2px solid var(--color-link-hover);
+	outline-offset: 3px;
+	border-radius: 4px;
+}
+
+
+/* Активний стан елементів */
+.sidebar__link:active {
+	color: #7baee8;
+}
+
+.header__logo:active {
+	opacity: 0.85;
+}
+
+.footer__link:focus-visible {
+	color: var(--color-link-hover);
+	outline: 2px solid var(--color-link-hover);
+	outline-offset: 3px;
+	border-radius: 4px;
+}
+
+.footer__link:active {
+	color: var(--color-link-hover);
+}
+
+/* Емуляція :active для сенсорних пристроїв через клас .is-active */
+.sidebar__link.is-active {
+	color: #7baee8;
+}
+
+.header__logo.is-active {
+	opacity: 0.85;
+}
+
+.footer__link.is-active {
+	color: var(--color-link-hover);
+}
+

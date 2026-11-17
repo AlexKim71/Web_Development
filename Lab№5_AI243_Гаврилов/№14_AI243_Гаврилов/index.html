@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ресторан "Гурман" - Смачна їжа в центрі міста</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- HEADER -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50">
+      <nav class="flex justify-between items-center px-6 md:px-12 py-4">
+        <div class="text-2xl font-bold text-amber-500">🍽️ Гурман</div>
+        <ul class="hidden md:flex justify-center gap-8 items-center">
+          <li><a href="#menu" class="hover:text-amber-500 transition duration-300">Меню</a></li>
+          <li><a href="#about" class="hover:text-amber-500 transition duration-300">Про нас</a></li>
+          <li><a href="#info" class="hover:text-amber-500 transition duration-300">Контакти</a></li>
+          <li>
+            <a
+              href="#booking"
+              class="bg-amber-500 text-slate-900 px-4 py-2 rounded-lg hover:bg-amber-600 transition duration-300 font-semibold"
+              >Броювання</a
+            >
+          </li>
+        </ul>
+        <button class="md:hidden bg-amber-500 text-slate-900 px-4 py-2 rounded-lg hover:bg-amber-600 transition">
+          ☰
+        </button>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="min-h-screen bg-gradient-to-r from-amber-600 to-orange-500 flex flex-col justify-center items-center text-center text-white px-6 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-20 bg-black"></div>
+      <div class="relative z-10">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">Ласкаво просимо до "Гурмана"</h1>
+        <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">
+          Найкращі страви в центрі міста. Смачна їжа, затишна атмосфера та виключне обслуговування
+        </p>
+        <button
+          class="bg-white text-amber-600 px-8 py-4 rounded-lg text-xl font-bold hover:bg-gray-100 focus:ring-4 focus:ring-amber-300 transition duration-300">
+          Зробити резервацію
+        </button>
+      </div>
+    </section>
+
+    <!-- FEATURED DISHES SECTION -->
+    <section id="menu" class="py-16 md:py-24 px-6 md:px-12 bg-gray-50">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900">Наші Спеціальні Страви</h2>
+      <p class="text-center text-gray-600 mb-12 text-lg">
+        Приготовані з найсвіжіших інгредієнтів нашими кращими шефами
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-red-400 to-orange-500 flex items-center justify-center">
+            <span class="text-6xl">🍝</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Паста Карбонара</h3>
+            <p class="text-gray-600 mb-4">Класична італійська паста з беконом, сиром і сливковим соусом</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-600">325 грн</span>
+              <button
+                class="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition">
+                Замовити
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-orange-400 to-yellow-500 flex items-center justify-center">
+            <span class="text-6xl">🥩</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Стейк Рибай</h3>
+            <p class="text-gray-600 mb-4">Соковитий стейк з овочами гриль та картопляним гарніром</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-600">450 грн</span>
+              <button
+                class="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition">
+                Замовити
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
+            <span class="text-6xl">🦞</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Морепродукти Гриль</h3>
+            <p class="text-gray-600 mb-4">Свіжа риба, креветки та кальмари з лимонним соусом</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-600">520 грн</span>
+              <button
+                class="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition">
+                Замовити
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
+            <span class="text-6xl">🥗</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Цезар з курицею</h3>
+            <p class="text-gray-600 mb-4">Свіжий салат з курицею, пармезаном та сухарями</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-600">280 грн</span>
+              <button
+                class="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition">
+                Замовити
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center">
+            <span class="text-6xl">🍰</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Чорний шоколад</h3>
+            <p class="text-gray-600 mb-4">Розкішний торт з темного шоколаду з ванільним мороженим</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-600">180 грн</span>
+              <button
+                class="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition">
+                Замовити
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+          <div class="h-48 bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center">
+            <span class="text-6xl">🍷</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Вино премія</h3>
+            <p class="text-gray-600 mb-4">Виборіші сорти вин з найвідомих винниць Європи</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-amber-600">400 грн</span>
+              <button
+                class="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition">
+                Замовити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-16 md:py-24 px-6 md:px-12 bg-white">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-slate-900">Про Ресторан "Гурман"</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl h-80 flex items-center justify-center">
+            <span class="text-9xl">🍽️</span>
+          </div>
+
+          <div>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Ресторан "Гурман" розташований у самому серці міста. Ми спеціалізуємося на італійській та європейській
+              кухні з сучасним підходом до приготування.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-4">
+                <span class="text-3xl">⏰</span>
+                <div>
+                  <h3 class="font-bold text-xl text-slate-900">Час роботи</h3>
+                  <p class="text-gray-600">Пн-Чт: 11:00 - 23:00<br />Пт-Сб: 11:00 - 00:00<br />Нд: 12:00 - 22:00</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <span class="text-3xl">👨‍🍳</span>
+                <div>
+                  <h3 class="font-bold text-xl text-slate-900">Наші Шефи</h3>
+                  <p class="text-gray-600">Команда досвідчених кулінарів з міжнародним досвідом</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <span class="text-3xl">🌟</span>
+                <div>
+                  <h3 class="font-bold text-xl text-slate-900">Якість</h3>
+                  <p class="text-gray-600">Тільки найсвіжіші інгредієнти та найкращі матеріали</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="bg-amber-500 text-white px-8 py-3 rounded-lg text-lg font-bold hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition">
+              Дізнатися більше
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="info" class="py-16 md:py-24 px-6 md:px-12 bg-gray-50">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900">Зв'яжіться з нами</h2>
+      <p class="text-center text-gray-600 mb-16 text-lg">Маємо питання? Ми рadi допомогти!</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+          <span class="text-5xl mb-4 block">📍</span>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">Адреса</h3>
+          <p class="text-gray-600">вул. Хрещатик, 34<br />Київ, 01001</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+          <span class="text-5xl mb-4 block">📞</span>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">Телефон</h3>
+          <p class="text-gray-600">+38 (044) 123-45-67<br />+38 (050) 123-45-67</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+          <span class="text-5xl mb-4 block">✉️</span>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">Email</h3>
+          <p class="text-gray-600">info@gurman.ua<br />booking@gurman.ua</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM SECTION -->
+    <section id="booking" class="py-16 md:py-24 px-6 md:px-12 bg-white">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-slate-900">Зробити резервацію</h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">Заповніть форму для броювання столика</p>
+
+        <form class="bg-gray-50 rounded-2xl shadow-lg p-8 space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="Ваше ім'я"
+              class="px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-500 focus:ring-4 focus:ring-amber-200 transition w-full"
+              required />
+            <input
+              type="email"
+              placeholder="Email"
+              class="px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-500 focus:ring-4 focus:ring-amber-200 transition w-full"
+              required />
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+              type="tel"
+              placeholder="Телефон"
+              class="px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-500 focus:ring-4 focus:ring-amber-200 transition w-full"
+              required />
+            <input
+              type="datetime-local"
+              class="px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-500 focus:ring-4 focus:ring-amber-200 transition w-full"
+              required />
+          </div>
+
+          <select
+            class="px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-500 focus:ring-4 focus:ring-amber-200 transition w-full">
+            <option>Кількість гостей: 1</option>
+            <option>Кількість гостей: 2</option>
+            <option>Кількість гостей: 3</option>
+            <option>Кількість гостей: 4</option>
+            <option>Кількість гостей: 5</option>
+            <option>Кількість гостей: 6+</option>
+          </select>
+
+          <textarea
+            placeholder="Спеціальні побажання (необов'язково)"
+            rows="4"
+            class="px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-500 focus:ring-4 focus:ring-amber-200 transition w-full"></textarea>
+
+          <button
+            type="submit"
+            class="w-full bg-amber-500 text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-amber-600 focus:ring-4 focus:ring-amber-300 transition duration-300">
+            Забронювати столик
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white py-12 px-6 md:px-12">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold text-amber-500 mb-4">🍽️ Гурман</h3>
+          <p class="text-gray-300">Найкращий ресторан у центрі міста</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-amber-500">Меню</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#" class="hover:text-amber-500 transition">Перші страви</a></li>
+            <li><a href="#" class="hover:text-amber-500 transition">Другі страви</a></li>
+            <li><a href="#" class="hover:text-amber-500 transition">Десерти</a></li>
+            <li><a href="#" class="hover:text-amber-500 transition">Напитки</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-amber-500">Контакти</h4>
+          <p class="text-gray-300 mb-2">📍 вул. Хрещатик, 34</p>
+          <p class="text-gray-300 mb-2">📞 +38 (044) 123-45-67</p>
+          <p class="text-gray-300">✉️ info@gurman.ua</p>
+        </div>
+      </div>
+
+      <hr class="my-8 border-gray-700" />
+
+      <div class="text-center text-gray-400">
+        <p>&copy; 2026 Ресторан "Гурман". Розроблено студентом Гавриловим О.В. (Варіант 8)</p>
+        <p class="mt-2 text-sm">Лабораторна робота №14: Адаптивна сторінка з Tailwind CSS</p>
+      </div>
+    </footer>
+  </body>
+</html>

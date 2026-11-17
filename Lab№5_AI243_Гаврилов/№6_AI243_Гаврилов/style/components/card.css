@@ -1,0 +1,55 @@
+.card {
+    position: relative;
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transform-style: preserve-3d;
+    animation-name: card-rise, card-loop;
+    animation-duration: 0.9s, 4.2s;
+    animation-timing-function: ease, ease-in-out;
+    animation-delay: calc(var(--d) * 120ms), calc(var(--d) * 120ms + 0.9s);
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: both, both;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: -40% 45% auto -10%;
+    height: 220px;
+    transform: rotate(25deg);
+    background: linear-gradient(180deg, rgba(33, 85, 205, 0.22), rgba(35, 166, 213, 0));
+    pointer-events: none;
+    animation: stripe-wave 4.8s ease-in-out infinite alternate;
+}
+
+.card:hover {
+    transform: translateY(-8px) rotateX(6deg) rotateY(-6deg) scale(1.01);
+    box-shadow: 0 18px 34px rgba(33, 85, 205, 0.2);
+}
+
+.card h2 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    line-height: 1.45;
+    color: #334155;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(33, 85, 205, 0.1);
+    padding: 6px 10px;
+    border-radius: 8px;
+    transform: translateZ(24px);
+}
+

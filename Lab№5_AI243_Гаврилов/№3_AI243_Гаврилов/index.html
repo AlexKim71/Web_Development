@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3 - CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Завдання 1. CSS селектори</h1>
+<!-- Завдання 1. CSS селектори -->
+<form name="search-person">
+    Search the visitors:
+    <table id="age-table">
+        <tr>
+            <td>Age:</td>
+            <td id="age-list">
+                <label>
+                    <input type="radio" name="age" value="young">less than 18</label>
+                <label>
+                    <input type="radio" name="age" value="mature">18-50</label>
+                <label>
+                    <input type="radio" name="age" value="senior">more than 50</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Additionally:</td>
+            <td>
+                <input type="text" name="info[0]">
+                <input type="text" name="info[1]">
+                <input type="text" name="info[2]">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Search!">
+</form>
+
+<p>Test for hover line 1</p>
+<p>Test for hover line 2</p>
+
+<h3 id="widget-title">Сообщения:</h3>
+<ul id="messages">
+    <li id="message-1">Сообщение 1</li>
+    <li id="message-2">Сообщение 2</li>
+    <li id="message-3" data-action="delete">Сообщение 3</li>
+    <li id="message-4" data-action="edit do-not-delete">Сообщение 4</li>
+    <li id="message-5" data-action="edit delete">Сообщение 5</li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<a href="http://site.com/list.zip">Ссылка на архив</a>
+<a href="http://site.com/list.pdf">..И на PDF</a>
+
+<h1>Завдання 2. Медіа-запити</h1>
+<!-- Завдання 2. Медіа-запити -->
+<!-- Елемент body розмітки містить три елементи div -->
+<div></div>
+<div></div>
+<div></div>
+
+</body>
+</html>
