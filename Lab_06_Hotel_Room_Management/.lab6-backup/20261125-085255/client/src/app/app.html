@@ -1,0 +1,64 @@
+<main>
+  <header>
+    <p class="eyebrow">ЛАБОРАТОРНА РОБОТА №6</p>
+    <h1>Готель — номерний фонд</h1>
+    <p>Навчальний приклад Angular + ASP.NET Core (варіант 4)</p>
+  </header>
+
+  <app-room-form [disabled]="pending()" [resetToken]="resetToken()"
+    (saved)="add($event)" />
+
+  <section class="tools" aria-label="Пошук і відбір">
+    <label for="search">Пошук за номером кімнати</label>
+    <input id="search" type="search" #search [value]="query()"
+      (input)="query.set(search.value)">
+
+    <label for="category-filter">Категорія</label>
+    <select id="category-filter" #cat (change)="category.set(cat.value)">
+      <option value="" [selected]="category() === ''">Усі категорії</option>
+      @for (c of categories; track c) {
+        <option [value]="c" [selected]="category() === c">{{ c }}</option>
+      }
+    </select>
+
+    <label for="availability-filter">Доступність</label>
+    <select id="availability-filter" #avail
+      (change)="availability.set(avail.value)">
+      <option value="all" [selected]="availability() === 'all'">Усі</option>
+      <option value="available" [selected]="availability() === 'available'">Лише доступні</option>
+      <option value="unavailable" [selected]="availability() === 'unavailable'">Лише недоступні</option>
+    </select>
+
+    <label for="sort">Сортування за вартістю ночі</label>
+    <select id="sort" #sort (change)="sortMode.set(sort.value)">
+      <option value="none" [selected]="sortMode() === 'none'">Без сортування</option>
+      <option value="asc" [selected]="sortMode() === 'asc'">За зростанням</option>
+      <option value="desc" [selected]="sortMode() === 'desc'">За спаданням</option>
+    </select>
+
+    <button type="button" (click)="load()" [disabled]="pending()">
+      Оновити список
+    </button>
+  </section>
+
+  @if (loading()) { <p role="status">Завантаження…</p> }
+  @if (pending() && !loading()) { <p role="status">Виконується запит…</p> }
+  @if (error()) { <p role="alert">{{ error() }}</p> }
+  @if (message()) { <p role="status">{{ message() }}</p> }
+
+  <p class="summary" aria-live="polite">
+    Видимих кімнат: {{ visible().length }}.
+    Сумарна місткість доступних: {{ availableCapacity() }} ос.
+  </p>
+
+  @if (!loading() && !error() && visible().length === 0) {
+    <p>За поточними умовами кімнат немає.</p>
+  }
+
+  <div class="catalog">
+    @for (room of visible(); track room.id) {
+      <app-room-item [room]="room" [disabled]="pending()"
+        (removed)="remove($event)" />
+    }
+  </div>
+</main>
